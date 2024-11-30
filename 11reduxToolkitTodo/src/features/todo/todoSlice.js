@@ -38,11 +38,19 @@ export const todoSlice = createSlice({
             state.todos = state.todos.filter((todo) => todo.id !== action.payload )
         },
 
+<<<<<<< HEAD
         updateTodo: (state, action) => {
             state.todos = state.todos.map((todo) =>
                 todo.id === action.payload.id ? { ...todo, text: action.payload.text } : todo
             );
         }
+=======
+         updateTodo: (state, action) => {
+            state.todos = state.todos.map((todo) =>
+                todo.id === action.payload.id ? { ...todo, text: action.payload.text } : todo
+            );
+        },
+>>>>>>> f3826d2f380e45731bbaea337cafcdab4d8fdf87
         
         // other method 
                 // updateTodo: (state, action) => {
@@ -64,7 +72,10 @@ export const todoSlice = createSlice({
                 //         return todo;
                 //     });
 
+<<<<<<< HEAD
                 
+=======
+>>>>>>> f3826d2f380e45731bbaea337cafcdab4d8fdf87
     }
 })
 
